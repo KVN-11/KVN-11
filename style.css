@@ -1,0 +1,14 @@
+:root {
+    --background-dark: #444
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-dark);
+}
