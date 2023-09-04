@@ -1,5 +1,8 @@
 :root {
-    --background-dark: #444
+    --background-dark: #444;
+    --card-gradient-start: #00feba;
+    --card-gradient-stop: #5b548a;
+    --light-font: #fff;
 }
 
 * {
@@ -16,8 +19,8 @@ body {
 .card {
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(135deg, #00feba, #5b548a);
-    color: #fff;
+    background: linear-gradient(135deg, var(--card-gradient-start), var(--card-gradient-stop));
+    color: var(--light-font);
     margin: 100px auto 0;
     border-radius: 20px;
     padding: 40px 35px;
