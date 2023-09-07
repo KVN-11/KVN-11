@@ -35,6 +35,19 @@ body {
     margin-bottom: 40px;
 }
 
+.temperature img {
+    width: 150px;
+    height: 150px;
+}
+
+.temperature h1 {
+    font-size: 40px;
+}
+
+.temperature h2 {
+    font-size: 30px;
+}
+
 .info {
     display: flex;
     flex-direction: row;
@@ -42,5 +55,7 @@ body {
 }
 
 .info img {
-    height: 60px;
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
 }
