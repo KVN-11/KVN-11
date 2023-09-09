@@ -14,7 +14,10 @@ async function checkWeather() {
     let city = document.querySelector("#city").value;
     console.log(city);
     const response = await fetch(apiURL + city + `&appid=${apiKey}`);
-    var data = await response.json();
+    if (response.status == 404) {
+        alert('City not found');
+    } else {
+        var data = await response.json();
 
     console.log(data);
 
@@ -26,4 +29,5 @@ async function checkWeather() {
     let weathercond = data.weather[0].main;
     console.log(weathercond);
     weatherimg.src = "images/" + weathercond + ".png";
+    }
 }
