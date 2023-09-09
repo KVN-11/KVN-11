@@ -10,7 +10,7 @@ async function checkWeather() {
     console.log(data);
 
     document.querySelector(".city").innerHTML = data.name;
-    document.querySelector(".temp").innerHTML = data.main.temp;
+    document.querySelector(".temp").innerHTML = data.main.temp + "&#176;C";
     document.querySelector(".humidity").innerHTML = data.main.humidity;
     document.querySelector(".speed").innerHTML = data.wind.speed;
 

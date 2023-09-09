@@ -1,7 +1,10 @@
 :root {
     --background-dark: #444;
-    --card-gradient-start: #00feba;
-    --card-gradient-stop: #5b548a;
+    --body-background-start: #CC95C0;
+    --body-background-mid: #DBD4B4;
+    --body-background-end: #7AA1D2;
+    --card-gradient-start: #4b6cb7;
+    --card-gradient-stop: #182848;
     --light-font: #fff;
 }
 
@@ -13,13 +16,13 @@
 }
 
 body {
-    background-color: var(--background-dark);
+    background: linear-gradient(90deg, var(--body-background-start), var(--body-background-mid), var(--body-background-end));
 }
 
 .card {
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(135deg, var(--card-gradient-start), var(--card-gradient-stop));
+    background: linear-gradient(135deg, var(--card-gradient-start),var(--card-gradient-stop));
     color: var(--light-font);
     margin: 100px auto 50px;
     border-radius: 20px;
